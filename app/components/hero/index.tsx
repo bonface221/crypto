@@ -11,8 +11,13 @@ import Navbar from "../navbar";
 
 const Hero = () => {
   return (
-    <Box bgImage="/home-bg.svg" bgSize="cover" backgroundPosition="center">
-      <Stack mx="130px" minH="110vh">
+    <Box
+      bgImage="/home-bg.svg"
+      bgSize="cover"
+      bgRepeat="no-repeat"
+      backgroundPosition="center top"
+    >
+      <Stack mx="130px" minH="100vh">
         <Navbar />
         <Grid templateRows="repeat(5, auto)" flex="1">
           <GridItem gridRowStart={2} justifySelf="center">

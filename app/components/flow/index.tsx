@@ -1,4 +1,4 @@
-import { Flex, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
 const flowCards = [
@@ -30,24 +30,51 @@ const flowCards = [
 
 const Flow = () => {
   return (
-    <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }}>
-      {flowCards.map((card) => (
-        <Stack key={card.id} bg="brand.cardBg" gap="16px" align="center">
-          <Image src={card.icon} alt={card.title} width={50} height={50} />
+    <Box position="relative" pb="80px">
+      <SimpleGrid
+        mt="-40px"
+        columns={{ base: 1, sm: 2, md: 3 }}
+        mx="130px"
+        spacing="20px"
+      >
+        {flowCards.map((card) => (
+          <Stack
+            key={card.id}
+            bg="brand.cardBg"
+            gap="16px"
+            align="center"
+            p="32px 24px"
+            borderRadius="25px"
+          >
+            <Image src={card.icon} alt={card.title} width={60} height={60} />
 
-          <Heading fontSize="32px" fontWeight={800} lineHeight="41px">
-            {card.title}
-          </Heading>
-          <Text color="brand.gray" mb="16px">
-            {card.description}
-          </Text>
-          <Flex align="center" gap="6px">
-            <Text color="brand.purple">{card.cta}</Text>
-            <Image src="/arrow-right.svg" alt="arrow" width={24} height={24} />
-          </Flex>
-        </Stack>
-      ))}
-    </SimpleGrid>
+            <Heading
+              fontSize="36px"
+              color="brand.white"
+              fontWeight={800}
+              lineHeight="41px"
+            >
+              {card.title}
+            </Heading>
+            <Text color="brand.gray" mb="16px">
+              {card.description}
+            </Text>
+            <Flex align="center" gap="6px">
+              <Text color="brand.purple">{card.cta}</Text>
+              <Image
+                src="/arrow-right.svg"
+                alt="arrow"
+                width={24}
+                height={24}
+              />
+            </Flex>
+          </Stack>
+        ))}
+      </SimpleGrid>{" "}
+      <Box position="absolute" left={4} bottom={4}>
+        <Image src="flow-stars.svg" alt="stars" width={80} height={80} />
+      </Box>
+    </Box>
   );
 };
 
