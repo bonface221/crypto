@@ -12,7 +12,12 @@ import Image from "next/image";
 const CTA4 = () => {
   return (
     <Box py={{ base: "40px", sm: "100px" }} pos="relative">
-      <Box pos="absolute" transform="translate(90%,-55%)" top="50%" left={0}>
+      <Box
+        pos="absolute"
+        transform={{ base: "translate(0%,-25%)", sm: "translate(0%,-55%)" }}
+        top="50%"
+        right={0}
+      >
         <Image
           src="/cta-4-gradient.svg"
           alt="cta-4-gradient"
