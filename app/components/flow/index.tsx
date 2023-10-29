@@ -32,7 +32,7 @@ const Flow = () => {
   return (
     <Box position="relative" pb="80px">
       <SimpleGrid
-        mt="-40px"
+        mt="-60px"
         columns={{ base: 1, sm: 2, md: 3 }}
         mx="130px"
         spacing="20px"

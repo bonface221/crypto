@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Grid,
-  GridItem,
-  Heading,
-  Stack,
-} from "@chakra-ui/react";
+import { Box, Button, Grid, GridItem, Heading, Stack } from "@chakra-ui/react";
 import Navbar from "../navbar";
 
 const Hero = () => {
@@ -19,8 +11,8 @@ const Hero = () => {
     >
       <Stack mx="130px" minH="100vh">
         <Navbar />
-        <Grid templateRows="repeat(5, auto)" flex="1">
-          <GridItem gridRowStart={2} justifySelf="center">
+        <Grid templateRows="repeat(7, auto)" flex="1">
+          <GridItem gridRowStart={3} justifySelf="center">
             <Stack maxW="700px" align="center" gap="40px">
               <Heading
                 color="brand.white"

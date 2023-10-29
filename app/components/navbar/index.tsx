@@ -11,7 +11,6 @@ const Navbar = () => {
           Crypto
         </Text>
       </Flex>
-
       <Flex
         fontSize="18px"
         fontStyle="normal"
