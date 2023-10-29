@@ -12,14 +12,12 @@ import Image from "next/image";
 const CTA4 = () => {
   return (
     <Box py="100px" pos="relative">
-      <Box pos="absolute" transform="translate(70%,-50%)" top="50%" left={0}>
+      <Box pos="absolute" transform="translate(35%,-55%)" top="50%" left={0}>
         <Image
           src="/cta-4-gradient.svg"
           alt="cta-4-gradient"
           width={1920}
           height={420}
-          layout="responsive"
-          objectFit="cover"
         />
       </Box>
       <SimpleGrid
