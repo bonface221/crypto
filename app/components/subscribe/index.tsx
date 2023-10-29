@@ -47,7 +47,6 @@ const Subscribe = () => {
             />
           </InputRightElement>
           <Input
-            // boxShadow="0px 2px 2px 0px rgba(255, 255, 255, 0.15) inset, 0px 0px 30px 0px rgba(255, 255, 255, 0.05) inset"
             backdropFilter=" blur(20px)"
             placeholder="Email Address"
             border="1px solid #18C8FF"

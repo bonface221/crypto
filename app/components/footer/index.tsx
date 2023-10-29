@@ -83,7 +83,7 @@ const Footer = () => {
         </Stack>
       </SimpleGrid>
 
-      {/* <Box pos="absolute" transform="translate(0%,0%)" bottom={0} left={0}>
+      <Box pos="absolute" transform="translate(0%,0%)" bottom={0} left={0}>
         <Image
           src="/footer-overlay.svg"
           alt="cta-4-gradient"
@@ -92,7 +92,7 @@ const Footer = () => {
           layout="responsive"
           objectFit="cover"
         />
-      </Box> */}
+      </Box>
     </Box>
   );
 };

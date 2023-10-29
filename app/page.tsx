@@ -11,7 +11,7 @@ import Footer from "./components/footer";
 
 export default function Home() {
   return (
-    <Box bg="brand.black">
+    <Box bg="brand.black" overflowX="hidden">
       <Hero />
       <Flow />
       <CTA />

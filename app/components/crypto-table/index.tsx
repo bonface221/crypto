@@ -66,6 +66,7 @@ const CrytpoTable = () => {
       mx={{ base: "15px", sm: "40px", md: "70px", lg: "90px", xl: "130px" }}
     >
       <TableContainer
+        zIndex={999}
         bg="brand.cardBg"
         w="100%"
         borderRadius="25px"
