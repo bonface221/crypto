@@ -5,6 +5,8 @@ import CTA from "./components/CTA";
 import CTA2 from "./components/CTA2";
 import CTA3 from "./components/CTA3";
 import CrytpoTable from "./components/crypto-table";
+import CTA4 from "./components/CTA4";
+import Subscribe from "./components/subscribe";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <CTA2 />
       <CTA3 />
       <CrytpoTable />
+      <CTA4 />
+      <Subscribe />
     </Box>
   );
 }
