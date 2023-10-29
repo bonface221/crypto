@@ -1,6 +1,7 @@
-import { Button, Flex, HStack, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
+import MobileDrawer from "./components/drawer";
 
 const Navbar = () => {
   return (
@@ -12,6 +13,7 @@ const Navbar = () => {
         </Text>
       </Flex>
       <Flex
+        display={{ base: "none", lg: "flex" }}
         fontSize="18px"
         fontStyle="normal"
         color="brand.white"
@@ -23,7 +25,7 @@ const Navbar = () => {
         <Link href="">Business</Link>
         <Link href="">Support</Link>
       </Flex>
-      <Flex gap="12px" align="center">
+      <Flex gap="12px" align="center" display={{ base: "none", lg: "flex" }}>
         <Button
           borderRadius="10px"
           border="1px solid #ffff"
@@ -48,6 +50,8 @@ const Navbar = () => {
           Sign up
         </Button>
       </Flex>
+
+      <MobileDrawer />
     </HStack>
   );
 };

@@ -9,7 +9,10 @@ const Hero = () => {
       bgRepeat="no-repeat"
       backgroundPosition="center top"
     >
-      <Stack mx="130px" minH="100vh">
+      <Stack
+        mx={{ base: "15px", sm: "40px", md: "70px", lg: "90px", xl: "130px" }}
+        minH="100vh"
+      >
         <Navbar />
         <Grid templateRows="repeat(7, auto)" flex="1">
           <GridItem gridRowStart={3} justifySelf="center">
