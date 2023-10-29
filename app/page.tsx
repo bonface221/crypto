@@ -8,6 +8,7 @@ import CrytpoTable from "./components/crypto-table";
 import CTA4 from "./components/CTA4";
 import Subscribe from "./components/subscribe";
 import Footer from "./components/footer";
+import GithubCTA from "./components/github-cta";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <CTA4 />
       <Subscribe />
       <Footer />
+      <GithubCTA />
     </Box>
   );
 }

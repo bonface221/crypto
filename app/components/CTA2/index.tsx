@@ -41,7 +41,7 @@ const CTA2 = () => {
             textAlign="center"
             fontSize={{ base: "30px", sm: "60px" }}
             fontWeight={900}
-            lineHeight={{ base: "40px", sm: "65px" }}
+            lineHeight={{ base: "40px", sm: "70px" }}
             fontStyle="normal"
           >
             A cryto mining platform that invest in you
@@ -52,7 +52,6 @@ const CTA2 = () => {
           </Text>
           <Button
             borderRadius="10px"
-            w="fit-content"
             border="1px solid #ffff"
             p="12px 21px"
             fontSize="16px"
@@ -60,6 +59,9 @@ const CTA2 = () => {
             lineHeight="16px"
             bg="transparent"
             color="brand.white"
+            _hover={{
+              bg: "brand.gradient",
+            }}
           >
             Get Started
           </Button>

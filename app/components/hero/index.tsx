@@ -30,12 +30,17 @@ const Hero = () => {
               <Button
                 borderRadius="10px"
                 color="brand.white"
-                w="fit-content"
                 bg="brand.gradient"
                 p="12px 21px"
                 fontSize="16px"
                 fontWeight={600}
                 lineHeight="16px"
+                border="1px solid"
+                borderColor="transparent"
+                _hover={{
+                  bg: "transparent",
+                  border: "1px solid #ffff",
+                }}
               >
                 Get Started
               </Button>

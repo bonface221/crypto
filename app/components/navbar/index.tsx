@@ -55,6 +55,9 @@ const Navbar = () => {
           lineHeight="16px"
           bg="transparent"
           color="brand.white"
+          _hover={{
+            bg: "brand.gradient",
+          }}
         >
           Sign in
         </Button>
@@ -66,6 +69,12 @@ const Navbar = () => {
           fontSize="16px"
           fontWeight={600}
           lineHeight="16px"
+          border="1px solid"
+          borderColor="transparent"
+          _hover={{
+            bg: "transparent",
+            border: "1px solid #ffff",
+          }}
         >
           Sign up
         </Button>
