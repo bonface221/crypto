@@ -11,51 +11,60 @@ import Image from "next/image";
 
 const CTA2 = () => {
   return (
-    <SimpleGrid
-      columns={2}
-      mx={{ base: "15px", sm: "40px", md: "70px", lg: "90px", xl: "130px" }}
-      pos="relative"
-      py="108px"
-      maxH="80vh"
-    >
-      <Flex align="center" justify="center">
+    <Box pos="relative">
+      <Box pos="absolute" top="-115%" left={0}>
         <Image
-          src="/cta-2-left.svg"
-          alt="cta-2-left"
-          width={349}
-          height={326}
+          src="/cta-2-overlay.svg"
+          alt="cta-2-right"
+          width={962}
+          height={10}
         />
-      </Flex>
-      <Stack align="center">
-        <Heading
-          color="brand.white"
-          textAlign="center"
-          fontSize="50px"
-          fontWeight={900}
-          lineHeight="65px"
-          fontStyle="normal"
-        >
-          A cryto mining platform that invest in you
-        </Heading>
-        <Text color="brand.gray" w="90%" bg="16px" textAlign="center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempos Lorem ipsum dolor
-        </Text>
-        <Button
-          borderRadius="10px"
-          w="fit-content"
-          border="1px solid #ffff"
-          p="12px 21px"
-          fontSize="16px"
-          fontWeight={600}
-          lineHeight="16px"
-          bg="transparent"
-          color="brand.white"
-        >
-          Sign in
-        </Button>
-      </Stack>
-    </SimpleGrid>
+      </Box>
+      <SimpleGrid
+        columns={2}
+        mx={{ base: "15px", sm: "40px", md: "70px", lg: "90px", xl: "130px" }}
+        py="108px"
+        maxH="80vh"
+      >
+        <Flex align="center" justify="center" zIndex={999}>
+          <Image
+            src="/cta-2-left.svg"
+            alt="cta-2-left"
+            width={349}
+            height={326}
+          />
+        </Flex>
+        <Stack align="center" zIndex={999}>
+          <Heading
+            color="brand.white"
+            textAlign="center"
+            fontSize="50px"
+            fontWeight={900}
+            lineHeight="65px"
+            fontStyle="normal"
+          >
+            A cryto mining platform that invest in you
+          </Heading>
+          <Text color="brand.gray" w="90%" bg="16px" textAlign="center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempos Lorem ipsum dolor
+          </Text>
+          <Button
+            borderRadius="10px"
+            w="fit-content"
+            border="1px solid #ffff"
+            p="12px 21px"
+            fontSize="16px"
+            fontWeight={600}
+            lineHeight="16px"
+            bg="transparent"
+            color="brand.white"
+          >
+            Sign in
+          </Button>
+        </Stack>
+      </SimpleGrid>
+    </Box>
   );
 };
 

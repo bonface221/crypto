@@ -4,6 +4,7 @@ import Flow from "./components/flow";
 import CTA from "./components/CTA";
 import CTA2 from "./components/CTA2";
 import CTA3 from "./components/CTA3";
+import CrytpoTable from "./components/crypto-table";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <CTA />
       <CTA2 />
       <CTA3 />
+      <CrytpoTable />
     </Box>
   );
 }

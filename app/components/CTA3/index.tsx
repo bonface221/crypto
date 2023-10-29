@@ -4,8 +4,8 @@ import React from "react";
 
 const CTA3 = () => {
   return (
-    <Flex>
-      <Stack align="center" gap="16px">
+    <Flex justify="center" align="center" py="70px">
+      <Stack maxW="700px" align="center" gap="16px" zIndex={999}>
         <Heading
           color="brand.white"
           textAlign="center"
