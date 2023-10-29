@@ -4,7 +4,7 @@ import Navbar from "../navbar";
 const Hero = () => {
   return (
     <Box
-      bgImage="/home-bg.svg"
+      bgImage="/home-bg.png"
       bgSize="cover"
       bgRepeat="no-repeat"
       backgroundPosition={{ base: "left", sm: "center top" }}

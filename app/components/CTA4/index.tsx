@@ -69,7 +69,7 @@ const CTA4 = () => {
         <Flex align="center" zIndex={999}>
           <Box>
             <Image
-              src="/cta-4-img.svg"
+              src="/cta-4-img.png"
               alt="cta-4-img"
               width={580}
               height={420}

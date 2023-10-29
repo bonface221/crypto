@@ -29,7 +29,7 @@ const CTA2 = () => {
       >
         <Flex align="center" justify="center" zIndex={999}>
           <Image
-            src="/cta-2-left.svg"
+            src="/cta-2-left.png"
             alt="cta-2-left"
             width={349}
             height={326}
@@ -44,7 +44,7 @@ const CTA2 = () => {
             lineHeight={{ base: "40px", sm: "70px" }}
             fontStyle="normal"
           >
-            A cryto mining platform that invest in you
+            24/7 access to full service customer support
           </Heading>
           <Text color="brand.gray" w="90%" mb="16px" textAlign="center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
