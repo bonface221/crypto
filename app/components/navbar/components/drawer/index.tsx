@@ -12,31 +12,11 @@ import {
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
-import { useRouter } from "next/navigation";
 import { RxHamburgerMenu } from "react-icons/rx";
-
-const navItems = [
-  {
-    name: "Buy/Sell",
-    href: "",
-  },
-  {
-    name: "Grow",
-    href: "",
-  },
-  {
-    name: "Business",
-    href: "",
-  },
-  {
-    name: "Support",
-    href: "",
-  },
-];
+import { navItems } from "@/app/components/navbar";
 
 const MobileDrawer = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const router = useRouter();
 
   return (
     <>

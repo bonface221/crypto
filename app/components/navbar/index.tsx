@@ -3,6 +3,25 @@ import Image from "next/image";
 import Link from "next/link";
 import MobileDrawer from "./components/drawer";
 
+export const navItems = [
+  {
+    name: "Buy/Sell",
+    href: "",
+  },
+  {
+    name: "Grow",
+    href: "",
+  },
+  {
+    name: "Business",
+    href: "",
+  },
+  {
+    name: "Support",
+    href: "",
+  },
+];
+
 const Navbar = () => {
   return (
     <HStack py="20px" justify="space-between">
@@ -20,10 +39,11 @@ const Navbar = () => {
         fontWeight={600}
         gap="32px"
       >
-        <Link href="">Buy/Sell</Link>
-        <Link href="">Grow</Link>
-        <Link href="">Business</Link>
-        <Link href="">Support</Link>
+        {navItems.map((item) => (
+          <Link key={item.name} href="">
+            {item.name}
+          </Link>
+        ))}
       </Flex>
       <Flex gap="12px" align="center" display={{ base: "none", lg: "flex" }}>
         <Button

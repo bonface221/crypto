@@ -11,7 +11,7 @@ const Hero = () => {
     >
       <Stack
         mx={{ base: "15px", sm: "40px", md: "70px", lg: "90px", xl: "130px" }}
-        minH="100vh"
+        minH={{ base: "85vh", md: "100vh" }}
       >
         <Navbar />
         <Grid templateRows="repeat(7, auto)" flex="1">
@@ -19,9 +19,10 @@ const Hero = () => {
             <Stack maxW="700px" align="center" gap="40px">
               <Heading
                 color="brand.white"
-                fontSize="85px"
+                textAlign="center"
+                fontSize={{ base: "60px", md: "85px" }}
                 fontWeight={900}
-                lineHeight="110.5px"
+                lineHeight={{ base: "60px", md: "110px" }}
                 fontStyle="normal"
               >
                 We make crypto clear and simple

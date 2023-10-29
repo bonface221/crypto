@@ -34,7 +34,7 @@ const Flow = () => {
       <SimpleGrid
         mt="-60px"
         columns={{ base: 1, sm: 2, md: 3 }}
-        mx="130px"
+        mx={{ base: "15px", sm: "40px", md: "70px", lg: "90px", xl: "130px" }}
         spacing="20px"
       >
         {flowCards.map((card) => (
