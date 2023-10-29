@@ -3,10 +3,10 @@ import { Box, Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 const CTA = () => {
   return (
     <Box
-      bgImage="/cta-bg.png"
-      bgRepeat="no-repeat"
-      bgPos="100% 50%"
-      bgSize="contain"
+    // bgImage="/cta-bg.png"
+    // bgRepeat="no-repeat"
+    // bgPos="100% 50%"
+    // bgSize="contain"
     >
       <Flex py="140px" justify="center" align="center">
         <Stack maxW="700px" align="center" gap="16px">

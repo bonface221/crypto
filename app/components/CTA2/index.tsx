@@ -11,15 +11,21 @@ import Image from "next/image";
 
 const CTA2 = () => {
   return (
-    <SimpleGrid columns={2} py="108px" maxH="80vh">
-      <Box my="auto" bgImage="https://placekitten.com/400/400" bgSize="cover">
-        {/* <Image
+    <SimpleGrid
+      columns={2}
+      mx={{ base: "15px", sm: "40px", md: "70px", lg: "90px", xl: "130px" }}
+      pos="relative"
+      py="108px"
+      maxH="80vh"
+    >
+      <Flex align="center" justify="center">
+        <Image
           src="/cta-2-left.svg"
           alt="cta-2-left"
-          width={580}
-          height={420}
-        /> */}
-      </Box>
+          width={349}
+          height={326}
+        />
+      </Flex>
       <Stack align="center">
         <Heading
           color="brand.white"
