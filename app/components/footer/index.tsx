@@ -27,7 +27,8 @@ const Footer = () => {
       <SimpleGrid
         columns={{ base: 1, md: 3 }}
         mx={{ base: "15px", sm: "40px", md: "70px", lg: "90px", xl: "130px" }}
-        py="100px"
+        py={{ base: "50px", sm: "100px" }}
+        gap={10}
       >
         <Stack align="flex-start" gap="32px">
           <Text color="brand.gray">
@@ -59,7 +60,7 @@ const Footer = () => {
           </InputGroup>
           <Text color="brand.gray">© 2021 GPD Holdings, LLC FinCEN MSB</Text>
         </Stack>
-        <Stack align="center" gap="24px">
+        <Stack align={{ base: "flex-start", md: "center" }} gap="24px">
           <Text color="brand.gray" fontWeight={600}>
             Company
           </Text>
@@ -69,7 +70,7 @@ const Footer = () => {
             </Text>
           ))}
         </Stack>
-        <Stack align="center">
+        <Stack align={{ base: "flex-start", md: "center" }}>
           <Stack gap="24px">
             <Text color="brand.gray" fontWeight={600}>
               Privacy Policy and Terms of Service

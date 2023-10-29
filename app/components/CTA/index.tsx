@@ -3,12 +3,12 @@ import { Box, Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 const CTA = () => {
   return (
     <Box>
-      <Flex py="140px" justify="center" align="center">
+      <Flex py={{ base: "60px", sm: "140px" }} justify="center" align="center">
         <Stack maxW="700px" align="center" gap="16px" zIndex={999}>
           <Heading
             color="brand.white"
             textAlign="center"
-            fontSize="50px"
+            fontSize={{ base: "30px", sm: "60px" }}
             fontWeight={900}
             lineHeight="65px"
             fontStyle="normal"

@@ -21,10 +21,11 @@ const CTA2 = () => {
         />
       </Box>
       <SimpleGrid
-        columns={2}
+        columns={{ base: 1, md: 2 }}
         mx={{ base: "15px", sm: "40px", md: "70px", lg: "90px", xl: "130px" }}
-        py="108px"
-        maxH="80vh"
+        py={{ base: "50px", sm: "108px" }}
+        spacing={{ base: 12, sm: 2 }}
+        // maxH="80vh"
       >
         <Flex align="center" justify="center" zIndex={999}>
           <Image
@@ -38,14 +39,14 @@ const CTA2 = () => {
           <Heading
             color="brand.white"
             textAlign="center"
-            fontSize="50px"
+            fontSize={{ base: "30px", sm: "60px" }}
             fontWeight={900}
-            lineHeight="65px"
+            lineHeight={{ base: "40px", sm: "65px" }}
             fontStyle="normal"
           >
             A cryto mining platform that invest in you
           </Heading>
-          <Text color="brand.gray" w="90%" bg="16px" textAlign="center">
+          <Text color="brand.gray" w="90%" mb="16px" textAlign="center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempos Lorem ipsum dolor
           </Text>

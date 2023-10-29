@@ -62,7 +62,7 @@ const tableData = [
 const CrytpoTable = () => {
   return (
     <Flex
-      py="60px"
+      py={{ base: "30px", sm: "60px" }}
       mx={{ base: "15px", sm: "40px", md: "70px", lg: "90px", xl: "130px" }}
     >
       <TableContainer

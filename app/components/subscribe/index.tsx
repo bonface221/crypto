@@ -13,14 +13,19 @@ import Image from "next/image";
 
 const Subscribe = () => {
   return (
-    <Flex justify="center" align="center" pt="50px" pb="120px">
+    <Flex
+      justify="center"
+      align="center"
+      pt="50px"
+      pb={{ base: "50px", sm: "70px", md: "120px" }}
+    >
       <Stack maxW="700px" gap="32px" align="center">
         <Heading
           color="brand.white"
           textAlign="center"
-          fontSize="50px"
+          fontSize={{ base: "30px", sm: "50px" }}
           fontWeight={900}
-          lineHeight="65px"
+          lineHeight={{ base: "40px", sm: "65px" }}
           fontStyle="normal"
         >
           Receive transmissions

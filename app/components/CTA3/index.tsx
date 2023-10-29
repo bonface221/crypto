@@ -4,7 +4,7 @@ import React from "react";
 
 const CTA3 = () => {
   return (
-    <Box py="100px" position="relative">
+    <Box py={{ base: "70px", sm: "100px" }} position="relative">
       <Box pos="absolute" transform="translate(0%,-60%)" top="50%" right={0}>
         <Image
           src="/cta-3-overlay.svg"
@@ -16,14 +16,18 @@ const CTA3 = () => {
           }}
         />
       </Box>
-      <Flex justify="center" align="center">
+      <Flex
+        justify="center"
+        align="center"
+        mx={{ base: "15px", sm: "40px", md: "70px", lg: "90px", xl: "130px" }}
+      >
         <Stack maxW="700px" align="center" gap="16px" zIndex={999}>
           <Heading
             color="brand.white"
             textAlign="center"
-            fontSize="50px"
+            fontSize={{ base: "30px", sm: "50px" }}
             fontWeight={900}
-            lineHeight="65px"
+            lineHeight={{ base: "40px", sm: "65px" }}
             fontStyle="normal"
           >
             Buy and sell with the lowest fees in&apos;the industry

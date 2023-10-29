@@ -7,7 +7,7 @@ const Hero = () => {
       bgImage="/home-bg.svg"
       bgSize="cover"
       bgRepeat="no-repeat"
-      backgroundPosition="center top"
+      backgroundPosition={{ base: "left", sm: "center top" }}
     >
       <Stack
         mx={{ base: "15px", sm: "40px", md: "70px", lg: "90px", xl: "130px" }}
@@ -20,7 +20,7 @@ const Hero = () => {
               <Heading
                 color="brand.white"
                 textAlign="center"
-                fontSize={{ base: "60px", md: "85px" }}
+                fontSize={{ base: "40px", sm: "60px", md: "85px" }}
                 fontWeight={900}
                 lineHeight={{ base: "60px", md: "110px" }}
                 fontStyle="normal"

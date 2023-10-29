@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const CTA4 = () => {
   return (
-    <Box py="100px" pos="relative">
+    <Box py={{ base: "40px", sm: "100px" }} pos="relative">
       <Box pos="absolute" transform="translate(90%,-55%)" top="50%" left={0}>
         <Image
           src="/cta-4-gradient.svg"
@@ -24,16 +24,23 @@ const CTA4 = () => {
         />
       </Box>
       <SimpleGrid
-        columns={2}
+        columns={{ base: 1, md: 2 }}
+        spacing={{ base: 12, sm: 2 }}
         mx={{ base: "15px", sm: "40px", md: "70px", lg: "90px", xl: "130px" }}
       >
-        <Stack align="flex-start" zIndex={999} justify="center" gap="16px">
+        <Stack
+          align={{ base: "center", sm: "flex-start" }}
+          zIndex={999}
+          justify="center"
+          gap="16px"
+        >
           <Heading
             color="brand.white"
-            fontSize="50px"
+            fontSize={{ base: "30px", sm: "50px" }}
             fontWeight={900}
-            lineHeight="65px"
+            lineHeight={{ base: "40px", sm: "65px" }}
             fontStyle="normal"
+            textAlign={{ base: "center", sm: "left" }}
           >
             Take your first step into safe, secure crypto investing
           </Heading>
